@@ -2,7 +2,7 @@
 /**
   *main - entry point
   *puts - prints string to screen
-  *retur: always 0 (success)
+  *return: always 0 (success)
   */
 int main(void)
 {

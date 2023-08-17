@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h>
 /**
   *main - print putchar,one letter at at time
   *Return: 0 is susscess

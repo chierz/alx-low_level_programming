@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h>
+#include "main.h"
 /**
   *main - print putchar,one letter at at time
   *Return: 0 is susscess
@@ -18,4 +18,3 @@ int main(void)
 
 	return (0);
 }
-main.h

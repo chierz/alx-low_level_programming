@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- *int _islower - checks and returns 1 when c is lower case and 0 if not
- * Return: return type
+ *_islower - checks and returns 1 when c is lower case and 0 if not
+ *@c: the characters
+ *Return: return type
  */
 int _islower(int c)
+	i
 {
-	if( c >= 'a' && c <= 'z' )
+	if (c >= 'a' && c <= 'z')
 		return (1);
 	else
 		return (0);

@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- *@i: variable
- *_puts - prints string followed by a a new line
+ *_puts - for printing string on a new line
+ *@str: the string in question
  *Return: 0 is success
  */
 
 void _puts(char *str)
+
 {
 	int i;
 

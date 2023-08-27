@@ -9,9 +9,11 @@
  */
 char *cap_string(char *str)
 {
+	int i;
+
 	bool new_word = true; /*Flag to track the start of a new word*/
 
-	for (int i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (new_word && (str[i] >= 'a' && str[i] <= 'z'))
 			/*Check if new word and lowercase letter*/

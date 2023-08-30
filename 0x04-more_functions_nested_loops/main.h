@@ -1,5 +1,5 @@
-#ifndef
-#define
+#ifndef MAIN_H
+#define MAIN_H
 
 int putchar(const char *string);
 int _isupper(int c);

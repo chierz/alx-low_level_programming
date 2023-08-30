@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion -  fxn dat prints a strng, followd by a new line
- *
+ *@s: the string
  * Return: Always 0.
  */
 

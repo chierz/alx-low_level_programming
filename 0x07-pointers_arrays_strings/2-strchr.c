@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- *_strchr - a fxn that locates a character in a string
+ *_strchr - fxn that locates a character in a string
  *@s: the string to search through
  *@c: the character to be located
  *Return: 0 is success

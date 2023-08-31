@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- *is_palindrome - 
- *
- *
- *
+ *is_palindrome - fxn dat checks if a string is a palindrome or not
+ *@s:pointer to the string
+ *Return: retrn 1 if a string is a palindrome and 0 if not
+ *@i:iterator
+ *@len:length of string
  */
 
-int check_pal(char*s,int i, int len);
+int check_pal(char *s, int i, int len);
 int _strlen_recursion(char *s);
 
 int is_palindrome(char *s)

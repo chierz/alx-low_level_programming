@@ -5,6 +5,7 @@
  * is_prime_number - tells if an integer is a prime or not
  *@n: number to evaluate
  * Return: 1 if n prime num, 0 if not
+ *@i: iterator
  */
 
 int actual_prime(int n, int i);
@@ -27,8 +28,8 @@ int actual_prime(int n, int i)
 {
 	if (i == 1)
 		return (1);
-	if (n%i == 0 && i > 0)
+	if (n % i == 0 && i > 0)
 		return (0);
-	return (actual_prime(n, i-1));
+	return (actual_prime(n, i - 1));
 }
 

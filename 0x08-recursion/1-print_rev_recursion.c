@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ *_print_rev_recursion - prints a string in reverse
+ *@s: the string
  */
-int main(void)
+void _print_rev_recursion(char *s)
 {
-	_print_rev_recursion("\nColton Walker");
-	return (0);
+	if (*s)
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
 }

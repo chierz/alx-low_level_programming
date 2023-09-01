@@ -12,19 +12,16 @@ char *_strncpy(char *dest, char *src, int n)
 
 {
 	int i;
+
+	for (i = 0 ; i < n &&  src[i] != '\0' ; i++)
+		/* Iterate through the characters to copy*/
 	{
-
-		for (i = 0 ; i < n &&  src[i] != '\0' ; i++)
-			/* Iterate through the characters to copy*/
-		{
-			dest[i] = src[i];/*Copy character*/
-		}
-		for (i  = n ; i < n ; i++)
-			/*Fill remaining characters with null bytes*/
-		{
-			dest[i] = '\0';
-		}
-		return (dest);
-
+		dest[i] = src[i];/*Copy character*/
 	}
+	for (i  = n ; i < n ; i++)
+		/*Fill remaining characters with null bytes*/
+	{
+		dest[i] = '\0';
+	}
+	return (dest);
 }

@@ -1,11 +1,9 @@
 #include <stdio.h>
-/**
- * main:program that prints name of the source file*/
 
-int main(void)
-{
-	printf("%s\n", __FILE__);
+#define PRINT_FILE_NAME printf("%s\n", __FILE__)
 
+int main() {
+	PRINT_FILE_NAME;
 	return 0;
 }
 

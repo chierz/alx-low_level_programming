@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+int main(int argc, char *argv[])
 
 
 
@@ -13,8 +14,6 @@
  * @argc: number of arguments
 
  * @argv: array of arguments
-
- *
 
  * Return: 0 (Success), 1 (Error)
 

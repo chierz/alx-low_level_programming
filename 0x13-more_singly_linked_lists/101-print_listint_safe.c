@@ -1,28 +1,32 @@
 #include "lists.h"
 /**
- * find_listint_loop - tortoise and hare, but we need to find the loop
- * @head: Pointer to the head node
- * Return: address of the node where the loop starts.
+ * print_listint_safe - prints a listint_t linked list.
+ * @head: pointer to node start
+ * Return: the number of nodes in the list
  */
-listint_t *find_listint_loop(listint_t *head)
+size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *slow = head, *fast = head;
+	const listint_t *visited[1024] = {NULL};
+	size_t count = 0, i;
 
-	while (slow && fast && fast->next)
+	while (head != NULL)
 	{
-		slow = slow->next;
-		fast = fast->next->next;
-		if (slow == fast)
+		for (i = 0; i < count; i++)
 		{
-			slow = head;
-			while (slow && fast)
+			if (head == visited[i])
 			{
-				if (slow == fast)
-					return (slow);
-				slow = slow->next;
-				fast = fast->next;
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				return (count);
 			}
 		}
+		visited[count++] = head;
+		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
+		if (count >= 1024)
+		{
+
+			exit(98);
+		}
 	}
-	return (NULL);
+	return (count);
 }

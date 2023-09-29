@@ -14,11 +14,11 @@ int set_bit(unsigned long int *n, unsigned int index)
 	/* Check if index is within valid range */
 	if (index >= sizeof(unsigned long int) * 8)
 	{
-		return -1; /* Error: Index out of range */
+		return (-1); /* Error: Index out of range */
 	}
 	mask = 1UL << index; /* Shift 1 by index positions */
 	*n = *n | mask; /* Set the bit at the specified index to 1 */
 
-	return 1;
+	return (1);
 }
 

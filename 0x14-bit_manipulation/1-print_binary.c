@@ -5,7 +5,7 @@
  * @n: The number to be converted and printed.
  *
  * Description: This function prints the binary representation of
- * a given number.
+ * a given num.
  */
 void print_binary(unsigned long int n)
 {

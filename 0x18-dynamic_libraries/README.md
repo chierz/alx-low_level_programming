@@ -1,0 +1,1 @@
+This directory contains basic C functions along with the Dynamic/Shared libraries that have been generated using them. Thus it allows us the freedom to use the specific libraries that we need unlike static libraries where we would have to use all all the library whether we need the library or not
